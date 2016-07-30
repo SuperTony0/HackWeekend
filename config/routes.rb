@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+
   resources :companies
   root to: 'companies#index'
   devise_for :users
+
 
   resources :contacts
   resources :companies
