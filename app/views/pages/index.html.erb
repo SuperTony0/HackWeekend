@@ -1,12 +1,8 @@
 <% content_for :top_content do %>
   <div class="jumbotron">
     <div class="container">
-      <h1>Welcome!</h1>
-      <p>Register to get started.</p>
-      <p>
-        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg white' %>
-        <%= link_to 'Log In', new_user_session_path, class: 'btn btn-primary btn-lg white' %>
-      </p>
+      <h1>Welcome Coffee Chatters!</h1>
+      <p><%= link_to 'Register', new_user_registration_path, class: "log-reg" %> to get started or <%= link_to 'Log In', new_user_session_path, class: "log-reg" %> if you've been here before.</p>
     </div>
   </div>
 <% end %>
